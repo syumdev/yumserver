@@ -17,5 +17,7 @@ chmod 600 .ssh/authorized_keys
 
 ## ssh without -i .pem file
 ```
+/etc/ssh/sshd_config
 PasswordAuthentication = yes
+sudo /etc/init.d/ssh restart
 ```
